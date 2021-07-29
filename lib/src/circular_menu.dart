@@ -66,7 +66,7 @@ class CircularMenu extends StatefulWidget {
     this.toggleButtonSize = 40,
     this.toggleButtonIconColor,
     this.toggleButtonAnimatedIconData = AnimatedIcons.menu_close,
-    this.toggleButtonIconData,
+    this.toggleButtonIconData = Icons.add,
     this.key,
     this.startingAngleInRadian,
     this.endingAngleInRadian,
