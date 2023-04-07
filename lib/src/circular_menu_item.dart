@@ -141,7 +141,7 @@ class _Badge extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       alignment: Alignment.center,
-      overflow: Overflow.visible,
+      clipBehavior: Clip.none,
       children: [
         child,
         Positioned(
@@ -162,9 +162,9 @@ class _Badge extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: textStyle ??
                         TextStyle(
-                          fontSize: 10,
-                          color: textColor ?? Theme.of(context).accentColor,
-                        ),
+                            fontSize: 10,
+                            color: textColor ??
+                                Theme.of(context).colorScheme.secondary),
                   ),
                 ),
               ),
